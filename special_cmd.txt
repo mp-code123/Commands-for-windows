@@ -1,0 +1,105 @@
+To encrypt many images inside one image
+-------------------------------------------
+
+copy /b kitten.jpg+compressed.zip newcompressedFile.jpg
+
+
+To hide a folder
+-------------------------------------------
+attrib  +h +s +r "git branches"
+
+
+
+To Unhide a folder
+-------------------------------------------
+attrib  -h -s -r "git branches"
+
+
+To connected wlan passwords
+-------------------------------------------
+netsh wlan show profile "redmi10" key=clear
+
+
+To copy a file to a remote server securely
+-----------------------------------------
+scp <filename> root@143.42.145.190:~/<filename>
+
+
+
+
+Map any folder in a system as a mounted drive
+---------------------------------------------
+subst s: "C:\Users\manish prajapati\Desktop>"
+
+
+
+To undo : subst /d s:
+
+
+
+
+To start a prompt in cmd
+------------------------------------------
+prompt {name}$G
+
+to close: prompt
+
+
+
+
+unshorten shorten link
+-------------------------------------------
+curl --head --location "url" | findstr location
+
+
+
+To check whether a site is Up
+--------------------------------------------
+curl -Is https://mysite.com
+
+
+
+
+To Check ip of a site
+------------------------------------------
+curl checkip.amazonaws.com
+
+
+
+To get Qrcode for a url
+-------------------------------------------
+curl qrenco.de/https://networkchuck.com
+
+
+
+To get the latest video of a user specified
+-----------------------------------------------
+curl -s https://decapi.me/youtube/latest_video?user=codewithharry
+
+
+
+Dictionary---------------------------------------
+
+curl dict.org/d:convince
+
+
+
+
+Open any site using cmd---------------------------
+
+start https://codewithharry.com
+
+
+To check typed cmd previously------------------------
+
+doskey /history
+
+
+
+
+
+
+
+
+
+
