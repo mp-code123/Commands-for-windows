@@ -1,0 +1,117 @@
+sudo cp ls mpcode
+
+
+sudo rm mpcode
+
+
+---------------------
+inside '/'----
+
+cd sbin
+
+sudo adduser john
+----------------------
+lazy way of adding user:
+
+sudo useradd john
+___it add user add as sh
+
+
+
+--------------------------
+to switch user:
+
+
+sudo su manish(for sudoers)
+su manish(without sudoers)
+
+----------------------
+to check which directory command you are using:
+
+
+which ls
+---------------------------
+
+media and opt directory is use to mount media devices**
+-----------------------------------
+
+
+------------------------
+id
+hostname
+uname 
+uname -a
+ip -- network stuffs
+netstat - to install (apt  install net-tools) --- to check status of your network
+ss -- session stuff
+env -- environment variable
+lsblk -- hdd stuffs
+lsusb -- if any usb plugged in
+lsof -- list open files
+apropos compress
+-------------------------------
+
+
+
+
+*******************sudoers files:*******************
+
+
+whoami -- know who are you
+
+
+cat /etc/passwd -- list all users
+
+thor:x:1003:1003:thor,,,:/home/thor:/bin/bash
+
+x - password in hash format(stored in etc/shadow)
+1003: 1003 -- uuid : groupid
+
+
+To change user password:
+------------------------
+
+sudo passwd manish
+
+
+To list hidden File:
+--------------------
+ls -al
+
+
+
+*****************usermod--------------------
+sudo usermod ironman --shell /bin/bash = to convert shell user to bash user
+
+
+ sudo usermod -l tonystark ironman = modify username
+
+
+useradd newmanish -m = add newuser to his home
+
+
+*******************sudoers*******************************
+
+To view Sudoers file === sudo visudo
+
+To make a normal user to Sudo User:
+write in sudo file === > username All = All
+
+
+*******************delete users******************************
+sudo userdel username
+
+**************************************************************
+
+
+**************to add group*******************
+sudo addgroup infinity
+
+
+
+***************To add a user inside a group***********
+ sudo usermod -aG infinity thor
+
+To remove: sudo gpasswd -d ana infinity
+
+
